@@ -4,7 +4,6 @@
     {
         Console.WriteLine("--- Универсальный калькулятор ---");
 
-        // Ввод данных
         Console.WriteLine("Введите первое число:");
         double num1 = Convert.ToDouble(Console.ReadLine());
 
@@ -18,7 +17,6 @@
         double multiply = Execute(num1, num2, (a, b) => a * b);
         double divide = Execute(num1, num2, (a, b) => b != 0 ? a / b : 0);
 
-        // Вывод результатов
         Console.WriteLine($"Сложение: {sum}");
         Console.WriteLine($"Вычитание: {subtract}");
         Console.WriteLine($"Умножение: {multiply}");
@@ -30,4 +28,5 @@
     {
         return operation(x, y);
     }
+
 }
